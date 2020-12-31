@@ -24,4 +24,7 @@ void setup(void)
 
 void loop(void)
 {
+	webSocket.loop();
+  	String message = GetMillis();
+  	webSocket.broadcastTXT(message);
 }
